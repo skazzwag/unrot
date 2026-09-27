@@ -1,0 +1,50 @@
+topics:
+  dbt:
+    name: dbt Core
+    description: Transformation, data quality, and analytics engineering with dbt
+    certifications:
+      - dbt Analytics Engineering Certification
+      - dbt Fundamentals
+    subtopics:
+      - id: project_structure
+        name: Project Structure
+        description: dbt_project.yml, directory layout, naming conventions
+      - id: models
+        name: Models
+        description: Materializations (table, view, incremental, ephemeral), staging/intermediate/marts, ref()
+      - id: jinja_macros
+        name: Jinja & Macros
+        description: Templating, macros, variables, env_var, reusable SQL
+      - id: tests
+        name: Tests
+        description: Generic tests, singular tests, custom tests, severity levels
+      - id: snapshots
+        name: Snapshots
+        description: SCD Type 2, snapshot configs, timestamp vs check strategy
+      - id: seeds
+        name: Seeds
+        description: Static data loading, CSV files, reference data
+      - id: sources
+        name: Sources
+        description: Source freshness, metadata, external data references
+      - id: documentation
+        name: Documentation
+        description: Docs blocks, catalog, lineage, auto-generated docs
+      - id: incremental_models
+        name: Incremental Models
+        description: Strategies (append, merge, delete+insert), unique_key, incremental_predicates
+      - id: packages
+        name: Packages
+        description: dbt-utils, dbt-expectations, dependencies.yml, package management
+      - id: artifacts
+        name: Artifacts
+        description: manifest.json, run_results.json, catalog.json, dbt artifacts
+      - id: commands
+        name: Commands
+        description: dbt build vs run vs test vs seed vs snapshot, command flags
+      - id: environments
+        name: Environments & Profiles
+        description: profiles.yml, targets, environment management, connections
+      - id: best_practices
+        name: Best Practices
+        description: Idempotence, DRY, modularity, CI/CD, code review
