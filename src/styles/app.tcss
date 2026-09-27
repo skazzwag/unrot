@@ -1,0 +1,187 @@
+/* unrot — Textual CSS theming */
+
+Screen {
+    background: $surface;
+    color: $text;
+}
+
+/* Welcome screen */
+WelcomeScreen {
+    align: center middle;
+}
+
+#welcome-panel {
+    width: 80;
+    height: auto;
+    padding: 2 4;
+    border: solid $primary;
+    border-title-color: $primary;
+}
+
+#welcome-title {
+    text-align: center;
+    text-style: bold;
+    color: $primary;
+    padding-bottom: 1;
+}
+
+/* Config section */
+.config-section {
+    padding: 1 2;
+}
+
+.config-label {
+    color: $accent;
+    text-style: bold;
+    padding-bottom: 0;
+}
+
+/* Quiz screen */
+QuizScreen {
+    layout: vertical;
+}
+
+#quiz-progress {
+    dock: top;
+    height: 3;
+    padding: 0 2;
+}
+
+#quiz-content {
+    padding: 1 2;
+}
+
+/* Question card */
+QuestionCard {
+    border: solid $primary;
+    border-title-color: $primary;
+    padding: 1 2;
+    margin-bottom: 1;
+    height: auto;
+    min-height: 10;
+}
+
+.question-meta {
+    color: $text-muted;
+    text-style: italic;
+    padding-bottom: 1;
+}
+
+.question-text {
+    padding: 1 0;
+}
+
+/* Answer area */
+.answer-area {
+    padding: 1 2;
+}
+
+RadioSet {
+    padding: 1 2;
+}
+
+TextArea {
+    height: 8;
+    margin: 1 2;
+    border: solid $accent;
+}
+
+/* Feedback panel */
+FeedbackPanel {
+    border: solid $success;
+    border-title-color: $success;
+    padding: 1 2;
+    margin-bottom: 1;
+    height: auto;
+}
+
+FeedbackPanel.incorrect {
+    border: solid $error;
+    border-title-color: $error;
+}
+
+.feedback-correct {
+    color: $success;
+    text-style: bold;
+}
+
+.feedback-incorrect {
+    color: $error;
+    text-style: bold;
+}
+
+.feedback-explanation {
+    padding: 1 0;
+}
+
+.feedback-source {
+    color: $text-muted;
+    text-style: italic;
+    padding-top: 1;
+}
+
+/* Stats screen */
+StatsScreen {
+    padding: 1 2;
+}
+
+#stats-title {
+    text-align: center;
+    text-style: bold;
+    color: $primary;
+    padding: 1 0;
+}
+
+/* Summary screen */
+SummaryScreen {
+    padding: 1 2;
+}
+
+#summary-title {
+    text-align: center;
+    text-style: bold;
+    color: $primary;
+    padding: 1 0;
+}
+
+/* Buttons */
+Button {
+    margin: 1 2;
+}
+
+Button.primary {
+    background: $primary;
+    color: $text;
+}
+
+Button.success {
+    background: $success;
+    color: $text;
+}
+
+/* Footer */
+Footer {
+    background: $panel;
+}
+
+/* Progress bar */
+ProgressBar {
+    margin: 0 2;
+}
+
+/* Stats table */
+DataTable {
+    margin: 1 2;
+    border: solid $panel;
+}
+
+DataTable > .datatable--header {
+    text-style: bold;
+    color: $primary;
+}
+
+/* Weak areas */
+.weak-area {
+    color: $warning;
+    padding: 0 2;
+}
